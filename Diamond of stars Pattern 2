@@ -1,0 +1,141 @@
+import java.util.*;
+public class Solution {
+    
+    public static void main(String[] args) {
+        
+        
+     Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int i = 1;
+        while(i <= n/2 + 1){
+            int spaces = 1;
+            while(spaces <= n/2 - i + 1){
+                System.out.print(' ');
+                spaces++;
+            }
+            int j = 1;
+            int num = i;
+            while(j<= 2*i- 1){
+                System.out.print("*");
+                num++;
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+         // i = 4;
+        while (i>n/2 + 1 && i <= n ){
+            int spaces = 1;
+            while(spaces <= i-n/2 - 1) {
+                System.out.print(' ');
+                spaces++;
+            } 
+            int j = 1;
+            int num = i;
+            while( j <= 2*(n-i+1)-1){ 
+                System.out.print("*");
+                num++;
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+        
+        
+        
+    }
+} 
+
+
+// import java.util.*;
+// public class Solution {
+    
+//     public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int i = 1;
+//         while( i <= n/2+1){
+//             int spaces = 1;
+//             while ( spaces <= n/2-i+1){
+//                 System.out.print(' ');
+//                 spaces++;
+//             }
+//             int j = 1;
+//             int num = i;
+//             while(j<= 2*i-1){
+//                 System.out.print("*");
+//                 num++;
+//                 j++;
+//             }
+//             System.out.println();
+//             i++;
+//         }
+//         while(i>n/2+1 && i<=n){
+//             int spaces = 1;
+//             while ( spaces <= i-n/2-1){
+//                 System.out.print(' ');
+//                 spaces++;
+//             }
+//             int j = 1;
+//             int num = i;
+//             while(j<= 2*(n-i+1)-1){
+//                 System.out.print("*");
+//                 num++;
+//                 j++;
+//             }
+//             System.out.println();
+//             i++;
+            
+//         }        
+        
+//     }
+// }
+
+// import java.util.*;
+// public class Solution {
+    
+//     public static void main(String[] args) {
+//         // Write your code here
+//         Scanner s = new Scanner(System.in);
+//         int n = s.nextInt();
+//         System.out.println('*');
+        
+//         int i = 1;
+//         while(i<=2*n - 1)
+//         {
+//             System.out.print('*');
+//             int count = 1;
+//             int j = 1;
+//             if(i <= n)
+//                 j = 2 * i - 1;
+//             else if(i > n)
+//             	j = (2 * n - 1 - i) * 2 + 1;
+//             while(j > 0)
+//             {
+//                 System.out.print(count);
+//                 if(i <= n)
+//                 {
+//                     if(j > i)
+//                         count++;
+//                     else
+//                         count--;
+//                 }
+//                 else
+//                 {
+//                     if(j > 2*n - i)
+//                         count++;
+//                     else
+//                         count--;
+//                 }
+//                 j--;
+//             }
+            
+//             System.out.print('*');
+//             System.out.println();
+//             i++;
+//         }
+//         System.out.println('*');
+//     }
+// }
+        
+     
